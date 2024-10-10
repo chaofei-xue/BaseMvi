@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BaseMVI</string>
+    <string name="network_error">Network not available</string>
+    <string name="no_data">No Data</string>
+    <string name="user_name_hint">Please enter username</string>
+    <string name="password_hint">Please enter password</string>
+    <string name="login">Log in</string>
+    <string name="login_success">Login successful</string>
+    <string name="password_error">Wrong password</string>
+</resources>
