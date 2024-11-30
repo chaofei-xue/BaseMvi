@@ -1,5 +1,7 @@
 package com.xue.basemvi.config
 
+import okhttp3.OkHttpClient
+
 /**
  * Created by chaofei-xue
  * on 2024/10/10
@@ -13,7 +15,9 @@ package com.xue.basemvi.config
  */
 object BaseMviConfig {
 
+    private val defClient by lazy { OkHttpClient() }
     private var isLogin: Boolean? = null
+    private var client:OkHttpClient? = null
 
     fun getLoginState(): Boolean? {
         return isLogin
@@ -21,5 +25,13 @@ object BaseMviConfig {
 
     fun setLoginState(isLogin: Boolean) {
         BaseMviConfig.isLogin = isLogin
+    }
+
+    fun getOkHttpClient(): OkHttpClient{
+        return client ?: defClient
+    }
+
+    fun setOkHttpClient(client:OkHttpClient) {
+        this.client = client
     }
 }
