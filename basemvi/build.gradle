@@ -6,7 +6,7 @@ plugins {
 
 android {
     compileSdk 33
-    namespace 'com.xue.basemvi'
+//    namespace 'com.xue.basemvi'
     defaultConfig {
         minSdk 24
 
